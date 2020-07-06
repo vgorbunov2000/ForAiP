@@ -1,0 +1,41 @@
+#include <iostream>
+#include <conio.h>
+#include <clocale>
+using namespace std;
+
+struct group
+{
+	char name[50];
+	int age;
+	int score;
+};
+void les(const group obj[], int i);
+int main()
+{
+	const int i = 3;
+	group aray[i] = {};
+	setlocale(LC_ALL, "rus");
+	for (int f = 0; f < i; f++)
+	{
+		cout << "Имя: ";
+		cin.getline(aray[f].name, 60);
+
+		cout << "Возраст: ";
+		cin >> aray[f].age;
+
+		cout << "Средний балл: ";
+		cin >> aray[f].score;
+
+		cin.get();
+	}
+	les(aray, i);
+	getch();
+}
+void les(const group obj[], int i)
+{
+	for (int f = 0; f < i; f++)
+	{
+		cout << "Имя" << obj[f].name << "Возраст" << obj[f].age << "Средний балл" << obj[f].score;
+	}
+
+}
