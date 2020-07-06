@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	int x;
+	cout << "Введите число: ";
+	cin >> x;
+	int g = 81 * x * x + 42 * x + 4;
+	int i;
+	for (i = 1; i <= g; i++){
+		std::string myString(x, '0');
+		cout << myString << endl;
+	}
+	system("pause");
+
+}
