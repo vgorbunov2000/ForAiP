@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	int a, b, c;
+	cout << "Введите число :";
+	cin >> a;
+	cout << "Введите число:";
+	cin >> b;
+	cout << "Введите число:";
+	cin >> c;
+	int G = (a + b + c) / 3;
+	cout << "Ваше число = " << G << endl;
+	int F = 2 * (a + c) - b * 3;
+	cout << "Ваше число = " << F << endl;
+	return 0;
+}
